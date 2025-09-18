@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ _('Login') }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container login-container">
+        <h1 class="page-title">{{ _('Welcome Back') }}</h1>
+        <p class="subtitle">{{ _('Please log in to continue') }}</p>
+        
+        <form action="{{ url_for('login') }}" method="POST" class="login-form">
+            <div class="form-group">
+                <label for="email">{{ _('Email Address') }}</label>
+                <input type="email" id="email" name="email" placeholder="{{ _('Enter your email') }}" required>
+            </div>
+            <div class="form-group">
+                <label for="password">{{ _('Password') }}</label>
+                <input type="password" id="password" name="password" placeholder="{{ _('Enter your password') }}" required>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">{{ _('Log In') }}</button>
+            
+            {% if message %}
+                <p class="error-message">{{ message }}</p>
+            {% endif %}
+        </form>
+        
+        <p class="meta-link">{{ _('Don\'t have an account?') }} <a href="{{ url_for('register') }}">{{ _('Sign Up') }}</a></p>
+    </div>
+</body>
+</html>

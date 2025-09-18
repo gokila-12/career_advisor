@@ -1,0 +1,2 @@
+# career_advisor
+A simple web application built with Flask that helps students and professionals explore career paths, get personalized advice, and plan their future.  🔹 Features  User login and signup system  Career suggestions based on interests and skills  Interactive and user-friendly interface  Organized structure with app.py, templates/, and static/  Easy to customize and expand  🔹 Tech Stack  Backend: Python (Flask)  Frontend: HTML, CSS  Database: SQLite / MySQL (optional)

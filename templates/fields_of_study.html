@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ _('Fields of Study') }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container result-container">
+        <header class="app-header">
+            <h1 class="logo">{{ _('Career.AI') }}</h1>
+            <nav class="nav-links">
+                <a href="{{ url_for('home') }}">{{ _('Home') }}</a>
+                <a href="{{ url_for('logout') }}">{{ _('Logout') }}</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <h2 class="section-title">{{ _('Suggested Fields Based on Your Skills') }}</h2>
+            <p class="section-subtitle">{{ _('Click on a field to learn more about it.') }}</p>
+
+            <div class="card-list">
+                {% if fields %}
+                    {% for field in fields %}
+                        <a href="{{ url_for('field_detail', field_name=field.name) }}" class="card-link">
+                            <div class="card field-card">
+                                <h3 class="card-title">{{ field.name }}</h3>
+                                <p class="card-description">{{ field.description }}</p>
+                            </div>
+                        </a>
+                    {% endfor %}
+                {% else %}
+                    <p class="no-results">{{ _('No fields of study found for your skills. Please try different skills.') }}</p>
+                {% endif %}
+            </div>
+        </main>
+    </div>
+</body>
+</html>

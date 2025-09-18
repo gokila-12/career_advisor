@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ field.name }} - {{ _('Details') }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container detail-container">
+        <header class="app-header">
+            <h1 class="logo">{{ _('Career.AI') }}</h1>
+            <nav class="nav-links">
+                <a href="{{ url_for('home') }}">{{ _('Home') }}</a>
+                <a href="{{ url_for('fields_of_study') }}">{{ _('Back to Fields') }}</a>
+                <a href="{{ url_for('logout') }}">{{ _('Logout') }}</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <h2 class="section-title">{{ field.name }}</h2>
+            <p class="section-subtitle">{{ field.description }}</p>
+
+            <section class="detail-section">
+                <h3>{{ _('Top Universities in India') }}</h3>
+                <ul class="university-list">
+                    {% for university in field.universities %}
+                        <li>
+                            <a href="{{ university.link }}" target="_blank" class="university-link">{{ university.name }}</a>
+                            <p>{{ university.location }}</p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </section>
+
+            <section class="detail-section">
+                <h3>{{ _('Recommended Certifications') }}</h3>
+                <ul class="certification-list">
+                    {% for cert in field.certifications %}
+                        <li>{{ cert }}</li>
+                    {% endfor %}
+                </ul>
+            </section>
+
+            <section class="detail-section">
+                <h3>{{ _('Guidance & Improvement') }}</h3>
+                <p>{{ field.guidance }}</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
