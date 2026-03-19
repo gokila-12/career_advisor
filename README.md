@@ -1,8 +1,8 @@
-# 🎯 AI-Based Career Advisor Web Application
+# AI-Based Career Advisor Web Application
 
-## 📌 Project Overview
+##  Project Overview
 
-This project is a **web-based Career Advisor system** built using Flask. It helps users identify suitable career paths based on their **skills and interests** through an interactive assessment.
+This project is a web-based Career Advisor system built using Flask. It helps users identify suitable career paths based on their skills and interests through an interactive assessment.
 
 The application provides personalized recommendations including:
 
@@ -11,33 +11,27 @@ The application provides personalized recommendations including:
 * Certifications
 * Career guidance
 
-This project demonstrates full-stack development using Python with real-world application of **user authentication, database management, and intelligent recommendation systems**.
+This project demonstrates full-stack development using Python with real-world application of user authentication, database management, and intelligent recommendation systems.
 
----
+## Key Features
 
-## 🚀 Key Features
+*  User Authentication (Login/Register system)
+*  Skill-based Career Assessment Quiz
+*  Personalized Career Recommendations
+*  Multi-language support (Flask-Babel)
+*  Database integration using SQLite
+*  Dynamic field filtering based on user skills
+*  Detailed field insights (universities, certifications, guidance)
 
-* 🔐 User Authentication (Login/Register system)
-* 🧠 Skill-based Career Assessment Quiz
-* 🎯 Personalized Career Recommendations
-* 🌍 Multi-language support (Flask-Babel)
-* 🗄️ Database integration using SQLite
-* 📊 Dynamic field filtering based on user skills
-* 🧾 Detailed field insights (universities, certifications, guidance)
+##  Tech Stack
 
----
+* Backend: Python, Flask
+* Frontend: HTML, CSS (Templates)
+* Database: SQLite (SQLAlchemy ORM)
+* Authentication: Flask-Login
+* Internationalization: Flask-Babel
 
-## 🛠️ Tech Stack
-
-* **Backend:** Python, Flask
-* **Frontend:** HTML, CSS (Templates)
-* **Database:** SQLite (SQLAlchemy ORM)
-* **Authentication:** Flask-Login
-* **Internationalization:** Flask-Babel
-
----
-
-## ⚙️ Core Functionalities
+##  Core Functionalities
 
 * User registration and login system
 * Career assessment using quiz scoring
@@ -46,15 +40,14 @@ This project demonstrates full-stack development using Python with real-world ap
 * Database-driven content rendering
 * Localization support for multiple languages
 
----
 
-## 🧩 System Workflow
+##  System Workflow
 
 User Login → Take Assessment → Skill Evaluation → Field Recommendation → Detailed Insights
 
----
 
-## 📂 Project Structure
+
+##  Project Structure
 
 ```
 Career-Advisor/
@@ -65,45 +58,35 @@ Career-Advisor/
 │── translations/       # Language files
 ```
 
----
 
-## ▶️ Getting Started
+##  Getting Started
 
-### 1. Clone the Repository
+# 1. Clone the Repository
 
-```bash
-git clone https://github.com/gokila-12/JARVIS.git
+
+git clone https://github.com/gokila-12/career_advisor.git
+
+
+# 2. Install Dependencies
+
 ```
-
-### 2. Install Dependencies
-
-```bash
 pip install flask flask-login flask-babel flask-sqlalchemy
 ```
 
-### 3. Run the Application
+# 3. Run the Application
 
 ```bash
 python app.py
 ```
 
-### 4. Open in Browser
-
-```
-http://127.0.0.1:5000/
-```
-
----
-
-## ⚠️ Requirements
+##  Requirements
 
 * Python 3.x
 * Internet connection
 * Browser (Chrome recommended)
 
----
 
-## 📈 Learning Outcomes
+## Learning Outcomes
 
 This project demonstrates:
 
@@ -113,9 +96,7 @@ This project demonstrates:
 * RESTful routing and MVC architecture
 * Real-world problem solving using logic mapping
 
----
-
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 * Integration with AI models (ChatGPT / ML recommendations)
 * Advanced analytics dashboard
@@ -123,9 +104,8 @@ This project demonstrates:
 * API integration for real-time job data
 * UI/UX improvements
 
----
 
-## 👨‍💻 Author
+##  Author
 
 Gokila Krishna B
 B.Tech Artificial Intelligence & Machine Learning Student
@@ -133,24 +113,18 @@ Aspiring AI Developer
 
 🔗 GitHub: https://github.com/gokila-12
 
----
-
-## ⭐ Project Value
+## Project Value
 
 This project showcases:
 
-* Ability to build **end-to-end web applications**
-* Implementation of **intelligent recommendation systems**
-* Strong understanding of **Flask ecosystem**
+* Ability to build end-to-end web applications
+* Implementation of intelligent recommendation systems
+* Strong understanding of Flask ecosystem
 
----
-
-## 📌 Note
+## Note
 
 This is a prototype system designed for educational and portfolio purposes.
 
----
-
-## ⭐ Support
+##  Support
 
 If you found this project useful, consider giving it a ⭐ on GitHub.
