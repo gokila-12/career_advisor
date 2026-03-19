@@ -2,7 +2,7 @@
 
 ##  Project Overview
 
-This project is a web-based Career Advisor system built using Flask. It helps users identify suitable career paths based on their skills and interests through an interactive assessment.
+This project is a web-based Career advisor system built using Flask. It helps users identify suitable career paths based on their skills and interests through an interactive assessment.
 
 The application provides personalized recommendations including:
 
@@ -11,7 +11,7 @@ The application provides personalized recommendations including:
 * Certifications
 * Career guidance
 
-This project demonstrates full-stack development using Python with real-world application of user authentication, database management, and intelligent recommendation systems.
+This project was developed as part of my interest in building AI-driven web applications and solving real-world career guidance problems.
 
 ## Key Features
 
@@ -22,6 +22,29 @@ This project demonstrates full-stack development using Python with real-world ap
 *  Database integration using SQLite
 *  Dynamic field filtering based on user skills
 *  Detailed field insights (universities, certifications, guidance)
+
+ ##  Achievement
+
+This project was successfully presented at the Tech Fest 2025 conducted by 
+Dhanalakshmi Srinivasan University.
+
+Received a participation certificate for demonstrating the application, 
+which provides career recommendations based on user skills and assessment.
+
+* Event: Tech Fest 2025  
+* Organized by: Dhanalakshmi Srinivasan University  
+
+The project was appreciated for:
+- Real-world problem-solving approach
+- Interactive and user-friendly design
+- Integration of backend (Flask) with database systems
+
+This experience strengthened my skills in:
+- Technical presentation and communication
+- Project demonstration in a real-world environment
+- Building scalable and practical applications
+
+   I personally presented and explained the working of this system to judges and participants during the event.
 
 ##  Tech Stack
 
@@ -107,10 +130,9 @@ This project demonstrates:
 
 ##  Author
 
-Gokila Krishna B
-B.Tech Artificial Intelligence & Machine Learning Student
-Aspiring AI Developer
-
+Gokila Krishna B  
+B.Tech Artificial Intelligence & Machine Learning Student  
+Aspiring AI Developer  
 🔗 GitHub: https://github.com/gokila-12
 
 ## Project Value
