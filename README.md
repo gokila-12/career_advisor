@@ -74,13 +74,27 @@ User Login → Take Assessment → Skill Evaluation → Field Recommendation →
 
 ```
 Career-Advisor/
-│── app.py              # Main Flask application
-│── templates/          # HTML templates
-│── static/             # CSS, JS, assets
-│── career_advisor.db   # SQLite database
-│── translations/       # Language files
+│
+├── app.py
+├── README.md
+│
+├── instance/
+│   └── career_advisor.db
+│
+├── templates/
+│   ├── home.html
+│   ├── login.html
+│   ├── register.html
+│   ├── assessment_quiz.html
+│   ├── fields_of_study.html
+│   └── field_detail.html
+│
+├── static/
+│   └── style.css
+
 ```
 
+```
 
 ##  Getting Started
 
